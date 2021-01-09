@@ -1,0 +1,45 @@
+Compiled from "Nested.java"
+public class Nested {
+  int a;
+
+  public Nested();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: iconst_1
+       6: putfield      #2                  // Field a:I
+       9: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: new           #6                  // class Nested
+       3: dup
+       4: invokespecial #7                  // Method "<init>":()V
+       7: astore_1
+       8: aload_1
+       9: invokespecial #8                  // Method fun:()V
+      12: return
+}
+
+Compiled from "Nested.java"
+class Nested$1 {
+}
+
+Compiled from "Nested.java"
+class Nested$Inner {
+  final Nested this$0;
+
+  Nested$Inner(Nested, Nested$1);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #2                  // Method "<init>":(LNested;)V
+       5: return
+
+  static int access$100(Nested$Inner);
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method get:()I
+       4: ireturn
+}
